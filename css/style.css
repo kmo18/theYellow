@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+@font-face {
+	font-family:'locida'; /*개발자가 서체명 지정*/
+	src:url("../fonts/LucidaBrightDemiItalic.eot");
+	src:local(''), url("../fonts/LucidaBrightDemiItalic.woff")
+}
+@font-face {
+	font-family: 'mangal';
+	src: url("../fonts/mangal.eot");
+	src: url("../fonts/mangal.woff");
+}
+
+
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; font-size:15px; color:#333; background:#303030 url("../imgs/wrap_line.png") repeat-y center top; }
+ul li { float:left; list-style: none; }
+a { display:block; color:#333; text-decoration:none; border: none; outline:none; }
+.clear { clear:both; }
+.wrap { width:1062px; margin:0 auto; overflow: hidden; }
+
+.h100 { height: 100px; }
+.bg-black { background: #141412; }
+.bg-white { background:#FFF; }
+.bg-oragnge { background: #FFCA08; }
+
+.title { padding:50px 0 0 50px; }
+.subtitle img, .subtitle h2, .subtitle h3 { float:left; }
+.subtitle img { padding:5px 10px 0 0; }
+.subtitle h2 { padding:0 15px 0 0; font-family:'locida'; font-size: 50px; text-transform: capitalize; }
+.subtitle h3 { 
+	padding-top: 25px; 
+	font-size:18px; font-weight:100; letter-spacing: 4px; 
+}
+
+
+
+/* ===== header ===== */
+header {
+	position:fixed; width:1062px; height: 100px; 
+	background:#141412; z-index: 99; 
+}
+header .logo { float:left;padding:30px 0 0 50px; }
+header nav { float:right; padding:55px 50px 0 0; font-family:'locida'; font-size:18px; text-transform:capitalize; }
+ul li a { padding:0 20px; color:#FFF; }
+ul li a:hover { color:#FFCA09; }
+/* ===== header: end ===== */
+
+
+
+/* ===== about us ======*/
+#aboutus {
+	height:1200px; padding:100px 50px 0 50px; background:#141412;
+}
+#aboutus video { width:950px; margin-top:30px; border:0; outline:0; }
+#aboutus .au-txt {
+	height:340px; margin-top:-5px;
+	background: url("../imgs/about_bg.png") no-repeat center top;
+}
+#aboutus .au-txt p { padding:85px 0 20px 0; color:#F1F1F1; text-align: center; }
+#aboutus .au-txt p strong { color: #FFCA09; }
+#aboutus .au-txt h2 { 
+	margin-bottom:120px; 
+	font-family: 'mangal'; font-size:48px; color:#F1F1F1; 
+	text-align: center; line-height: 42px; letter-spacing: -4px; 
+}
+#aboutus .au-txt h3 { float:left; margin-left:40px; font-family:'locida'; font-size:22px; color:#FFCA09; }
+#aboutus p.au-txt-info { float:left; margin-left:100px; padding-top:0; font-size:12px; text-align:left; }
+/* ===== about us: end ======*/
+
+
+
+
+/* ===== equipment ===== */
+#equipment { height: 1250px; }
+#equipment:before {
+	content:''; height:100px; 
+}
+.camera { padding:50px; }
+.camera img { float:left; }
+.camera .equip-text { float:left; margin-left:70px; padding-top:90px; } 
+.camera .equip-text img { padding-bottom:30px; }
+.camera .equip-text ul li { line-height: 30px; }
+.camera .equip-text ul li:first-child { text-align: right; }
+.camera .equip-text ul li:last-child { padding-left: 10px; }
+/* ===== equipment: end ===== */
+
+
+
+
+/* ===== movie ===== */
+#movie { position:relative; height: 1250px; margin-top:100px; background:#FFCA08 url("../imgs/BabyPropose.png")no-repeat 90px 25px; }
+#movie p { position: absolute; left: 55px; bottom: 200px; }
+/* ===== movie: end ===== */
+
+
+
+/* ===== video ===== */
+#video { height: 1500px; }
+.video-baby {
+	height: 550px; 
+	background:#FFF url("../imgs/baby_v.png") no-repeat right top;
+}
+.video-wedding {
+	height: 490px;
+	background: #FFF url("../imgs/wedding_v.png")no-repeat left top;
+}
+#video h4, #video h5 { font-family: 'mangal'; font-size: 28px; text-transform: uppercase; line-height: 24px; letter-spacing: -2px; }
+.baby-text { padding: 200px 0 0 100px; }
+.wedding-text { padding:200px 0 0 600px; }
+.baby-text h4 em, .wedding-text h4 em { font-style: normal; color:#FFCA08; }
+.baby-text p, .wedding-text p { padding-top:20px; }
+/* ===== video: end ===== */
+
+
+
+
+footer { 
+	height: 150px; padding-top:40px;
+	font-size: 12px; color:#F4F4F4; text-align: center; background: #141414;
+}
+
+
+
+
+
+
+
+
